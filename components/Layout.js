@@ -1,23 +1,25 @@
 // fonts 
 
-import { Sora } from '@next/font/google'
+import { Sora , Squada_One } from "next/font/google"
 
-import { SquadaOne } from '@next/font/google';
 
 
 //font settings
 
 const sora = Sora({
   subsets: ['latin'],
+  display: 'swap',
   variable : '--font-sora',
   weight : ['100','200','300','400','500','600','700','800']
 })
 
-const squada = SquadaOne({
+const squada = Squada_One({
   subsets: ['latin'],
   variable: '--font-squada',
-  weight: ['100','200','300','400','500','600','700','800'], // Squada One only has regular weight
+  weight: ['400'], // Squada One only has regular weight
 });
+
+
 
 //components
 
@@ -27,8 +29,8 @@ import TopLeftImg from '../components/TopLeftImg'
 
 const Layout = ({children}) => {
   return (
-  <div className={`page bg-white text-black bg-cover bg-no-repeat ${sora.variable} 
-  font-sora relative   `}>
+  <div className={`page bg-white text-black bg-cover bg-no-repeat ${sora.variable} ${squada.variable} 
+  font-squada relative   `}>
 
     {/*<TopLeftImg /> */}
     

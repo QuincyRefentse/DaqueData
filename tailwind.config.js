@@ -21,6 +21,15 @@ module.exports = {
       xl: '1200px',
     },
     extend: {
+      backdropBlur: {
+        xs: '2px',
+      },
+      colors: {
+        'backdrop-blue': '#233dff',
+      },
+      backgroundColor: {
+        'backdrop-blue': '#233dff',
+      },
       colors: {
         //primary: '#131424',
         primary: "#ffffff",
@@ -50,5 +59,15 @@ module.exports = {
       DEFAULT: '15px',
     },
   },
-  plugins: [require('tailwind-scrollbar')],
+  plugins: [require('tailwind-scrollbar'),
+
+    function ({ addUtilities }) {
+      addUtilities({
+        '.backdrop-blue': {
+          backdropFilter: 'blur(10px)',
+          backgroundColor: 'rgba(35, 61, 255, 0.5)', // Adjust the opacity as needed
+        },
+      });
+    },
+  ],
 };
