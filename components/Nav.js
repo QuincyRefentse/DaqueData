@@ -26,8 +26,29 @@ export const navData = [
   },
 ];
 
+//next link 
+import Link from 'next/link';
+
+//next router
+
+import {useRouter} from 'next/router';
+
+
 const Nav = () => {
-  return <nav>nav</nav>;
+  const router = useRouter();
+  const pathname = router .pathname
+  return (
+  <nav>
+    {/*inner*/}
+    <div className='flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10'>
+      {navData.map((link,index) => {
+
+        return <Link href={link.path} key={link.name} >{link.icon}</Link>
+
+      })}
+    </div>
+    </nav>
+  );
 };
 
 export default Nav;

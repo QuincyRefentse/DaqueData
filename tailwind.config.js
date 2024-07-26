@@ -22,7 +22,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#131424',
+        //primary: '#131424',
+        primary: "#ffffff",
         secondary: '#393A47',
         accent: '#F13024',
       },
@@ -36,8 +37,11 @@ module.exports = {
         'spin-slow': 'spin 6s linear infinite',
       },
       fontFamily: {
+
         poppins: [`var(--font-poppins)`, 'sans-serif'],
         sora: [`var(--font-sora)`, 'sans-serif'],
+        squada: ['var(--font-squada)', 'sans-serif']
+
       },
     },
   },
