@@ -31,10 +31,11 @@ module.exports = {
         'backdrop-blue': '#233dff',
       },
       colors: {
-        //primary: '#131424',
-        primary: "#ffffff",
+        primary: '#131424',
+        //primary: "#ffffff",
         secondary: '#393A47',
-        accent: '#F13024',
+        accent: '#ffffff',
+        //accent: '#233ce1'
       },
       backgroundImage: {
         explosion: 'url("/bg-explosion.png")',
