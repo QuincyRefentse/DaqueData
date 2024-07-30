@@ -8,7 +8,7 @@ const Avatar = () => {
 
   return <div className="hidden xl:flex xl:max-w-none xl:justify-center xl:items-center w-full" >
     <Image 
-    src={'/DaqueData.png'} 
+    src={'/DaqueData1.png'} 
     width={737} 
     height={678} 
     alt=''
