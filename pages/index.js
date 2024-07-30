@@ -10,7 +10,7 @@ import Avatar from "../components/Avatar";
 
 //framer motion
 
-import { motion } from "framer-motion";
+import { easeOut, motion } from "framer-motion";
 
 //varaints
 
@@ -28,6 +28,7 @@ const Home = () => {
       
         <div className="text-center flex flex-col justify-center xl:pt-40
         xl:text-left h-full container mx-auto">
+           
           {/*title*/}
           <motion.h1
           
@@ -78,11 +79,18 @@ const Home = () => {
           image
         </div>
         {/* particle */}
-        <div>Particles</div>
+        <ParticleContainer />
         {/* avatar img */}
-        <div>
-          <Avatar />
-        </div>
+        <motion.div 
+         variants={fadeIn('up',0.5)}
+         initial='hidden'
+         animate='show' 
+         exit='hidden'
+         transition={{duration: 1, ease : 'easeInOut' }}
+        className="w-full h-full max-h-[678px] absolute -bottom-32
+        lg:bottom-0 lg:right-[-18%]">
+          <Avatar /> 
+        </motion.div>
       </div>
     </div>
 
