@@ -22,7 +22,7 @@ module.exports = {
     },
     extend: {
       backdropBlur: {
-        xs: '2px',
+        xs: '0px',
       },
       colors: {
         'backdrop-blue': '#233dff',
@@ -31,14 +31,17 @@ module.exports = {
         'backdrop-blue': '#233dff',
       },
       colors: {
-        primary: '#131424',
-        //primary: "#ffffff",
+        primary1: '#131424',
+        primary: "#ffffff",
         secondary: '#393A47',
-        accent: '#ffffff',
+        //accent: '#ffffff',
+        accent: '#131424',
+        accent1: '#233dff',
         //accent: '#233ce1'
       },
       backgroundImage: {
         explosion: 'url("/bg-explosion.png")',
+        explosion1: 'url("/bg-explosion-blue.png")',
         circles: 'url("/bg-circles.png")',
         circleStar: 'url("/circle-star.svg")',
         site: 'url("/site-bg.svg")',

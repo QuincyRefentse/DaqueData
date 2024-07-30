@@ -48,9 +48,9 @@ const Nav = () => {
 
         return (
         
-        <Link className={`${link.path === pathname && "text-accent"
+        <Link className={`${link.path === pathname && "text-accent1"
 
-         } relative flex items-center group hover:text-accent translation-all
+         } relative flex items-center group hover:text-accent1 translation-all
          duration-300 `} 
          href={link.path}
          key={index}
@@ -58,10 +58,13 @@ const Nav = () => {
           {/* tooltip */} 
 
          <div className='absolute pr-14 right-0 hidden xl:group-hover:flex'>
-          <div className='bg-white relative flex text-primary items-center p-[6px]
-          rounded-[3px] border border-black border-[1px]'>
+          <div className='bg-white relative flex text-primary1 items-center p-[6px]
+          rounded-[3px] border border-black border-[1px] text-xl'>
             <div className='text-[12px] leading-none font-semibold capitalize'>{link.name}</div>
           </div>
+
+           {/* triangle */}
+           <div className=''></div>
         </div>
           {/* icon */}
           <div> {link.icon}</div>
