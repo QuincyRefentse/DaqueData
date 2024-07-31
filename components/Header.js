@@ -20,9 +20,9 @@ const Header = () => {
           {/* Logo */}
           <Link href={'/'}>
           <Image 
-          src={'DaqueDataLogo1.svg'}
-          width={220}
-          height={48}
+          src={'DaqueData2-bg.svg'}
+          width={240}
+          height={56}
           alt=""
           priority={true}
 

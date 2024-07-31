@@ -31,6 +31,8 @@ module.exports = {
         'backdrop-blue': '#233dff',
       },
       colors: {
+        twitter : '#1DA1F2',
+        linkedin: '#0A66C2',
         primary1: '#131424',
         primary: "#ffffff",
         secondary: '#393A47',
