@@ -64,20 +64,6 @@ const WorkSlider = () => {
   return <Swiper 
 
   spaceBetween={10}
-  breakpoints={{
-    320:{
-      slidesPerView: 1,
-      spaceBetween: 15,
-    },
-    640:{
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    1024: { // Added breakpoint for larger screens
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-  }}
 
 
   pagination={{
@@ -111,11 +97,11 @@ const WorkSlider = () => {
                 duration-300'>
                   <div className='items-center gap-x-2 text-[13px] tracking-[0.2em] '>
                     {/*title  part 1*/}
-                    <div className='delay-100'>title part 1</div>
+                    <div className='delay-100'>LIVE SITE</div>
 
                      {/*title  part 1*/}
                      <div className='translate-y-[500%] group-hover:translate-y-0
-                     transition-all duration-300 delay-150'>title part 2</div>
+                     transition-all duration-300 delay-150'>LIVE SITE</div>
 
                      {/*icon*/}
                      <div className='text-xl translate-y-[500%]
