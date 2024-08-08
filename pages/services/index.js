@@ -16,7 +16,7 @@ import { fadeIn } from '../../variants'
 
 const Services = () => {
   return (
-  <div className='h-full bg-primary/30 py-36 flex items-center'>
+  <div className='overflow-x-auto h-full bg-primary/30 py-36 flex items-center'>
       <Circles />
        <div className='container mx auto'>
         <div className='flex flex-col xl:flex-row gap-x-8'>
@@ -35,10 +35,8 @@ const Services = () => {
             initial='hidden'
             animate='show'
             exit= "hidden"
-            className='md-4 max-w-[400px] mx-auto lg:mx-0 text-black'>
-              Lorem ipsum dolor sit amet, consectet null a ante et justo sed  diam non pro id el
-              vestibulum. Sed non odio lectus, auctor iaculis felis. Ut enim just od tempor null
-              auctor.
+            className='md-4 max-w-[400px] mx-auto xl:px-0 text-accent  text-lg md:text-xl font-bold'>
+              We offer solutions including digitization of physical documents to improve accessibility and efficiency, web and app development for responsive, high-performance platforms, professional design for visual identity, data science for insights, and legal governance consulting for compliance.
             </motion.p>
           </div>
 

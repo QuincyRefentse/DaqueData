@@ -12,15 +12,15 @@ const Socials = () => {
   return (
   <div className='flex items-center gap-x-5 text-lg'>
 
-     <Link href={''}  className='hover:text-linkedin transition-all duration-300'>
+     <Link href={'https://www.linkedin.com/company/daque-data'}  className='hover:text-linkedin transition-all duration-300'>
       <RiLinkedinFill/>
      </Link>
      
-     <Link href={''}  className='hover:text-red-500  transition-all duration-300'>
+     <Link href={'mailto:DaqueData@proton.me'}  className='hover:text-red-500  transition-all duration-300'>
       <RiMailFill/>
      </Link>
 
-     <Link href={''}  className='hover:text-twitter  transition-all duration-300'>
+     <Link href={'https://x.com/daquedata'}  className='hover:text-twitter  transition-all duration-300'>
       <RiTwitterFill/>
      </Link>
      

@@ -1,25 +1,25 @@
 // testimonial data
 const testimonialSlider = [
   {
-    image: '/t-avt-1.png',
-    name: 'Anne Smith',
+    image: '/cropped_image_1.png',
+    name: 'Danielle ',
     position: 'Customer',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'Daque Data transformed our processes with innovative design and top-notch data solutions!',
   },
   {
     image: '/t-avt-2.png',
-    name: 'Jane Doe',
-    position: 'Customer',
+    name: 'Thando Morake',
+    position: 'Graphic Designer',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'Daque Data’s expertise in digitization and development has streamlined our operations seamlessly',
   },
   {
     image: '/t-avt-3.png',
-    name: 'Jhon Doe',
+    name: 'Lerato',
     position: 'Customer',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'Daque Data made tech easy and fun, from digitizing to designing!',
   },
 ];
 
@@ -32,6 +32,7 @@ import { Swiper , SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+
 
 
 // icons

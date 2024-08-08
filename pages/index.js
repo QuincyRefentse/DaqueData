@@ -19,7 +19,7 @@ import { fadeIn } from "../variants";
  
 const Home = () => {
   return (
-    <div className="bg-primary/60 h-full">
+    <div className="overflow-x-auto bg-primary/60 h-full">
       {/*text*/}
 
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-white/30
@@ -48,10 +48,11 @@ const Home = () => {
           initial='hidden'
           animate='show' 
           exit='hidden'
-          className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-gray-500"> 
+          className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-gray-500 text-lg sm:text-xl md:text-2xl lg:text-3xl"> 
 
-            lorem ipsum dolor sit amet, consectetur adipiscing elit sed diam 
-            nonumy euismod sem velit es pos  nostrum temp 
+
+          Welcome to Daque Data. We provide expert digitization services to streamline your processes and enhance efficiency. Discover how we can transform your data management.
+
           </motion.p>
  
           {/* btn */}

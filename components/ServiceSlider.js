@@ -20,6 +20,8 @@ import {
   RxArrowTopRight,
 } from "react-icons/rx";
 
+import { FaHeadset } from 'react-icons/fa'
+
 import { MdOutlineAnalytics } from "react-icons/md";
 //import Required modules
 
@@ -32,27 +34,27 @@ const serviceData = [
   {
     icon: <RxCrop />,
     title: 'Digitisation',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'We specialize in digitizing physical documents to streamline workflows and enhance data accessibility. Converting paper records into structured digital formats improves storage and retrieval, ensuring efficient management while maintaining data integrity and security.',
   },
   {
     icon: <RxPencil2 />,
     title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: "Our design services enhance your brand's visual identity and user experience. We create engaging graphics, user interfaces, and cohesive branding strategies. Our design solutions align with your business goals, offering a professional and effective visual representation.",
   },
   {
     icon: <RxDesktop />,
     title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: "We provide web and app development services, creating responsive websites and mobile applications. Integrating intuitive design with advanced technology, we build scalable, high-performance solutions that engage users and drive results, ensuring effective and versatile digital platforms.",
   },
   {
     icon: <MdOutlineAnalytics />,
     title: 'Data Analytics',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'We offer data science services to transform data into actionable insights. Utilizing advanced analysis, machine learning, and statistical modeling, we help organizations make informed decisions and drive innovation, improving operational efficiency with strategic data-driven approaches.',
   },
   {
-    icon: <RxRocket />,
+    icon: <FaHeadset />,
     title: 'Consulting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Our legal governance consulting helps organizations navigate regulatory requirements and ensure compliance. We provide expert guidance on risk management and legal frameworks, offering tailored solutions to streamline processes, mitigate risks, and uphold governance standards effectively.',
   },
 ];
 
@@ -89,7 +91,7 @@ const ServiceSlider = () => {
             <div className='mb-2 text-lg text-black'>
               {item.title}
             </div>
-            <p className='max-w-[350px] leading-normal text-black'>
+            <p className='max-w-[350px] leading-normal text-black' style={{ fontSize: '0.8rem' }}>
               {item.description}
             </p>
           </div>
