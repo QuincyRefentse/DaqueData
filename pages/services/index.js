@@ -1,14 +1,4 @@
 
-//icons
-
-import {} from 'react-icons/rx'
-
-// service data
-
-export const serviceData = [
-
-]
-
 //component
 
 import ServiceSlider from '../../components/ServiceSlider'
@@ -33,16 +23,35 @@ const Services = () => {
           { /* text*/}
           <div className='text-center flex xl:w-[30vw] flex-col lg:text-left mb-4
           xl:mb-0'>
-            <h2 className='h2 xl:mt-8'>My Services <span className='text-accent2'>.</span>
-            </h2>
-            <p className='md-4 max-w-[400px] mx-auto lg:mx-0 text-black'>
+            <motion.h2 
+            variants={fadeIn('up',0.2)}
+            initial='hidden'
+            animate='show'
+            exit= "hidden"
+             className='h2 xl:mt-8'>My Services <span className='text-accent2'>.</span>
+            </motion.h2>
+            <motion.p 
+            variants={fadeIn('up',0.4)}
+            initial='hidden'
+            animate='show'
+            exit= "hidden"
+            className='md-4 max-w-[400px] mx-auto lg:mx-0 text-black'>
               Lorem ipsum dolor sit amet, consectet null a ante et justo sed  diam non pro id el
               vestibulum. Sed non odio lectus, auctor iaculis felis. Ut enim just od tempor null
               auctor.
-            </p>
+            </motion.p>
           </div>
+
+          
+          <motion.div
+          variants={fadeIn('down',0.6)}
+          initial='hidden'
+          animate='show'
+          exit= "hidden"
+          className='w-full xl:max-w-[65%]'>
           { /* slider */}
           <ServiceSlider />
+          </motion.div>
 
         </div>
        </div>

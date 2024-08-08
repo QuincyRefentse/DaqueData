@@ -25,6 +25,9 @@ module.exports = {
         xs: '0px',
       },
       colors: {
+        placeholder: 'black',
+      },
+      colors: {
         'backdrop-blue': '#233dff',
       },
       backgroundColor: {
@@ -40,6 +43,7 @@ module.exports = {
         accent: '#131424',
         accent1: '#233dff',
         accent2: '#233dff',
+        accent3: '#c9d0ff'
         //accent: '#233ce1'
       },
       backgroundImage: {
@@ -59,6 +63,9 @@ module.exports = {
         squada: ['var(--font-squada)', 'sans-serif']
 
       },
+      fontSize: {
+        'placeholder': '20px', // Adjust the size as needed
+      },
     },
   },
   container: {
@@ -69,10 +76,12 @@ module.exports = {
   plugins: [require('tailwind-scrollbar'),
 
     function ({ addUtilities }) {
+
       addUtilities({
         '.backdrop-blue': {
           backdropFilter: 'blur(10px)',
           backgroundColor: 'rgba(35, 61, 255, 0.5)', // Adjust the opacity as needed
+        
         },
       });
     },

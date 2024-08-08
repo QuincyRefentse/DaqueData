@@ -1,0 +1,9 @@
+/* swiper-custom.css */
+.swiper-pagination-bullet {
+    background-color: #233dff !important;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #233dff !important;
+  }
+  
